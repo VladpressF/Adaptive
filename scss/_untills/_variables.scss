@@ -1,0 +1,17 @@
+$background: #2F303A;
+$button: #2196F3;
+$section: #757575;
+
+$main: "Roboto", sans-serif;
+
+$fonts: (
+  'roboto-bold': "Roboto/Roboto-Bold.ttf",
+  'roboto-black': "Roboto/Roboto-Black.ttf",
+  'roboto-medium': "Roboto/Roboto-Medium.ttf",
+  'roboto-regular': "Roboto/Roboto-Regular.ttf",
+  'roboto-light': "Roboto/Roboto-Light.ttf",
+);
+
+@function getFont($key) {
+  @return map-get($fonts, $key);
+}

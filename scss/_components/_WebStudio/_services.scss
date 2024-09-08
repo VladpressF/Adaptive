@@ -1,0 +1,40 @@
+
+.services {
+  padding-bottom: 94px;
+  position: relative;
+  
+
+  &-title {
+    @extend %font-bold;
+    font-size: 36px;
+    line-height: 42px;
+    @extend %text-center;
+    padding-bottom: 50px;
+  }
+
+  &-list {
+    @extend %flex-space-between;
+   li{
+    margin-right: 30px;
+   }
+  }
+}
+
+.bg-title {
+  background-color: #2F303ACC;
+  @extend %font-bold;
+  font-size: 14px;
+  line-height: 16px;
+  @extend %color-white;
+  width: 370px;
+  height: 70px;
+  @extend %flex-center;
+  z-index: 1;
+  position: absolute;
+  bottom: 95px;
+}
+@media screen and (max-width: 1199px) {
+    .services{
+      display: none;
+    }
+  }

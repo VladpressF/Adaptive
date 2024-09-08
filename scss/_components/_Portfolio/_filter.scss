@@ -1,0 +1,47 @@
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 34px;
+
+  
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+    padding-top: 40px;
+  }
+  @media screen and (min-width: 575px) and (max-width: 766px){
+    justify-content: center;
+  }
+  .filter-button {
+    background-color: #F5F4FA;
+    color: #212121;
+    border-radius: 5px;
+    border: none;
+    margin: 5px 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 767px) {
+    
+  }
+    &:hover {
+      background-color: $button;
+      color: white;
+      border-color: $button;
+      box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .text-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+  }
+}

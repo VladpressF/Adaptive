@@ -1,0 +1,62 @@
+%font-bold {
+  font-family: getFont('roboto-bold'), sans-serif;
+  font-weight: 700;
+}
+
+%font-regular {
+  font-family: getFont('roboto-regular'), sans-serif;
+  font-weight: 400;
+}
+
+%font-medium {
+  font-family: getFont('roboto-medium'), sans-serif;
+  font-weight: 500;
+}
+
+%text-center {
+  text-align: center;
+}
+
+%color-white {
+  color: #FFFFFF;
+}
+
+%color-gray {
+  color: #757575;
+}
+
+%color-black {
+  color: #212121;
+}
+
+%color-white-translucent {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+%transition-fill {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%transition-color {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%transition-bg-color {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flex-align-start {
+  display: flex;
+  align-items: flex-start;
+}

@@ -1,0 +1,47 @@
+
+
+.client-icons {
+   @extend %flex-space-between;
+  
+   @media screen and (max-width: 1199px){
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 60px;
+   }
+  .icon-client {
+    fill: #AFB1B8;
+    cursor: pointer;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    margin-bottom: 94px;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      margin-bottom: 0;
+      flex-basis: calc((100% - 60px) / 3);
+    }
+    @media screen and (max-width: 768px){
+      margin-bottom: 0;
+    }
+    &:hover {
+      fill: #2196F3;
+      border: 1px solid #2196F3;
+      transition:fill, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+      transition:border, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.client-title {
+  @extend %font-bold;
+  font-size: 36px;
+  line-height: 42.19px;
+  letter-spacing: 3%;
+  @extend %text-center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+  }
+}

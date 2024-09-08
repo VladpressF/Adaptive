@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <img src="img_Web/WebStudio.svg" alt="" class="logo">
+            <nav>
+                <input type="checkbox" id="toggle">
+                <label class="toggle-lable" for="toggle">
+                    <span></span>
+                </label>
+
+                <ul class="nav-menu">
+
+                    <li><a href="#" class="nav-link" id="studia">Студія</a></li>
+                    <li><a href="porfolio.html" class="nav-link">Портфоліо</a></li>
+                    <li><a href="#" class="nav-link">Контакти</a></li>
+                    <div class="contact">
+                        <li>
+                            <a href="mailto:info@devstudiio.com" class="nav-email"> <svg class="icon-header-email"
+                                    height="12px" width="16px">
+                                    <use href="img_Web/symbol-defs.svg#icon-envelope-hover"></use>
+                                </svg> info@devstudiio.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+380961111111" class="phone-number"> <svg class="icon-header-phone"
+                                    height="16px" width="10px">
+                                    <use href="img_Web/symbol-defs.svg#icon-smartphone"></use>
+                                </svg> +38 096 111 11 11</a>
+                        </li>
+                    </div>
+                    <div class="mobile-links">
+                        <li><a href="#" class="mob-link">Instagram</a></li>
+                        <li><a href="#" class="mob-link">Twitter</a></li>
+                        <li><a href="#" class="mob-link">Facebook</a></li>
+                        <li><a href="#" class="mob-link" id="last">LinkedIn</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="main-section">
+            <div class="container">
+                <div class="flex-container">
+                    <h1 class="main-title" data-aos="fade-up">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+                    <button type="button" class="order-button" data-modal-open>
+                        <p class="text-button">Замовити послугу</p>
+                    </button>
+                </div>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button class="btn" data-modal-close>X</button>
+                        <h1 class="form-title">Залиште свої дані, ми вам передзвонимо</h1>
+                        <form action="" class="form">
+                            <p class="pred-title">Ім'я</p>
+                            <label>
+                                <input class="form-input" type="text" name="name" id="onee">
+                            </label>
+                            <p class="pred-title">Телефон</p>
+                            <label>
+                                <input class="form-input" type="tel" name="tel" id="twoo">
+                            </label>
+                            <p class="pred-title">Пошта</p>
+                            <label>
+                                <input class="form-input" type="email" name="email" id="threee">
+                            </label>
+                            <p class="pred-title">Коментар</p>
+                            <textarea name="form-input" id="fourr" cols="30" rows="10"
+                                placeholder="Введіть текст"></textarea>
+                            <div class="poin">
+                                <label>
+                                    <input type="checkbox" name="checkbox" class="checkbox">
+                                </label>
+                                <p class="poin-title">Погоджуюся з розсилкою та приймаю <span class="poin-span">Умови
+                                        договору</span></p>
+                            </div>
+                            <button type="submit" class="button" data-modal-close>Відправити</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature-section">
+            <div class="container">
+                <div class="flex-container1">
+                    <div class="feature" id="one">
+                        <h2 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h2>
+                        <p class="feature-text">Ідейні міркування, і навіть початок повсякденної роботи з формування
+                            позиції.</p>
+                    </div>
+                    <br>
+                    <div class="feature" id="two">
+                        <h2 class="feature-title">ПУНКТУАЛЬНІСТЬ</h2>
+                        <p class="feature-text">Завдання організації, особливо рамки і місце навчання кадрів тягне на
+                            себе.</p>
+                    </div>
+                    <br>
+                    <div class="feature" id="three">
+                        <h2 class="feature-title">ПЛАНУВАННЯ</h2>
+                        <p class="feature-text">Так само консультація з широким активом значною мірою зумовлює</p>
+                    </div>
+                    <br>
+                    <div class="feature" id="four">
+                        <h2 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+                        <p class="feature-text">Значимість цих проблем настільки очевидна, що реалізація планових
+                            завданнь</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <h1 class="services-title" data-aos="flip-up">Чим ми займаємося</h1>
+                <ul class="services-list">
+                    <li> <picture class="foto-services">
+                        <source srcset="img_Web/services/img_klava_1x.webp 1x, img_Web/services/img_klava_2x.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        >
+                        <source srcset="img_Web/services/img_klava_1x.png 1x, img_Web/services/img_klava_2x.png 2x"
+                        media="(min-width: 1200px)"
+                        >
+                        <img src="img_Web/imgg.jpg" alt="">
+                    </picture>
+                        <p class="bg-title">ДЕСКТОПНІ ДОДАТКИ</p>
+                    </li>
+                    <li><picture class="foto-services">
+                        <source srcset="img_Web/services/img_mobile_1x.webp 1x, img_Web/services/img_mobile_2x.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        >
+                        <source srcset="img_Web/services/img_mobile_1x.png 1x, img_Web/services/img_mobile_2x.png 2x"
+                        media="(min-width: 1200px)"
+                        >
+                        <img src="img_Web/img(1).jpg" alt="">
+                    </picture>
+                        <p class="bg-title">МОБІЛЬНІ ДОДАТКИ</p>
+                    </li>
+                    <li><picture class="foto-services">
+                        <source srcset="img_Web/services/img_tablet_1x.webp 1x, img_Web/services/img_tablet_2x.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        >
+                        <source srcset="img_Web/services/img_tablet_1x.png 1x, img_Web/services/img_tablet_2x.png 2x"
+                        media="(min-width: 1200px)"
+                        >
+                        <img src="img_Web/img(2).jpg" alt="">
+                    </picture>
+                        <p class="bg-title">ДИЗАЙНЕРЬСКІ РІШЕННЯ</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="team-section">
+            <div class="container">
+                <h1 class="team-title" data-aos="flip-up">Наша команда</h1>
+                <ul class="team-list">
+                    <li class="team-li" data-aos="zoom-in-right">
+                        <picture class="foto-member">
+                        <source srcset="img_Web/team/img_igor_1x.webp 1x, img_Web/team/img_igor_2x.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        >
+                        <source srcset="img_Web/team/img_igor_1x.jpg 1x, img_Web/team/img_igor_1x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        >
+                        <source srcset="img_Web/team/img_igor_1x.webp 1x, img_Web/team/img_igor_2x.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                        width="360px"
+                        >
+                        <source srcset="img_Web/team/img_igor_1x.jpg 1x, img_Web/team/img_igor_1x.jpg 2x"
+                        media="(min-width: 768px)"
+                        width="360px"
+                        >
+                        <source srcset="img_Web/team/img_igor_1x.webp 1x, img_Web/team/img_igor_2x.webp 2x"
+                        type="image/webp"
+                        media="(max-width: 767px)"
+                        width="100%"
+                        >
+                        <source srcset="img_Web/team/img_igor_1x.jpg 1x, img_Web/team/img_igor_1x.jpg 2x"
+                        media="(max-width: 767px)"
+                        width="100%"
+                        >
+                        <img src="img_Web/team/img_igor_1x.jpg" alt="">
+                    </picture>
+                        <p class="team-member-name">Ігор Дем'яненко</p>
+                        <p class="team-member-job">Product Designer</p>
+                        <div class="social-icon">
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse-3"></use>
+                            </svg>
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse-2"></use>
+                            </svg>
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse-1"></use>
+                            </svg>
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="team-li" data-aos="zoom-in-right">
+                        <picture class="foto-member">
+                        <source srcset="img_Web/team/img_olga_1x.webp 1x, img_Web/team/img_olga_2x.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        >
+                        <source srcset="img_Web/team/img_olga_1x.jpg 1x, img_Web/team/img_olga_1x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        >
+                        <source srcset="img_Web/team/img_olga_1x.webp 1x, img_Web/team/img_olga_2x.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                        width="360px"
+                        >
+                        <source srcset="img_Web/team/img_olga_1x.jpg 1x, img_Web/team/img_olga_1x.jpg 2x"
+                        media="(min-width: 768px)"
+                        width="360px"
+                        >
+                        <source srcset="img_Web/team/img_olga_1x.webp 1x, img_Web/team/img_olga_2x.webp 2x"
+                        type="image/webp"
+                        media="(max-width: 767px)"
+                        width="100%"
+                        >
+                        <source srcset="img_Web/team/img_olga_1x.jpg 1x, img_Web/team/img_olga_1x.jpg 2x"
+                        media="(max-width: 767px)"
+                        width="100%"
+                        >
+                        <img src="img_Web/team/img_olga_1x.jpg" alt="">
+                    </picture>
+                        <p class="team-member-name">Ольга Рєпіна</p>
+                        <p class="team-member-job">Frontend Devloper</p>
+                        <div class="social-icon">
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse-3"></use>
+                            </svg>
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse-2"></use>
+                            </svg>
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse-1"></use>
+                            </svg>
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="team-li" data-aos="zoom-in-right">
+                        <picture class="foto-member">
+                        <source srcset="img_Web/team/img_mikola_1x.webp 1x, img_Web/team/img_mikola_2x.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        >
+                        <source srcset="img_Web/team/img_mikola_1x.jpg 1x, img_Web/team/img_mikola_1x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        >
+                        <source srcset="img_Web/team/img_mikola_1x.webp 1x, img_Web/team/img_mikola_2x.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                        width="360px"
+                        >
+                        <source srcset="img_Web/team/img_mikola_1x.jpg 1x, img_Web/team/img_mikola_1x.jpg 2x"
+                        media="(min-width: 768px)"
+                        width="360px"
+                        >
+                        <source srcset="img_Web/team/img_mikola_1x.webp 1x, img_Web/team/img_mikola_2x.webp 2x"
+                        type="image/webp"
+                        media="(max-width: 767px)"
+                        width="100%"
+                        >
+                        <source srcset="img_Web/team/img_mikola_1x.jpg 1x, img_Web/team/img_mikola_1x.jpg 2x"
+                        media="(max-width: 767px)"
+                        width="100%"
+                        >
+                        <img src="img_Web/team/img_mikola_1x.jpg" alt="">
+                    </picture>
+                        <p class="team-member-name">Микола Тарасова</p>
+                        <p class="team-member-job">Marketing</p>
+                        <div class="social-icon">
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse-3"></use>
+                            </svg>
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse-2"></use>
+                            </svg>
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse-1"></use>
+                            </svg>
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="team-li" data-aos="zoom-in-right">
+                        <picture class="foto-member">
+                        <source srcset="img_Web/team/img_miha_1x.webp 1x, img_Web/team/img_miha_2x.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        >
+                        <source srcset="img_Web/team/img_miha_1x.jpg 1x, img_Web/team/img_miha_1x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        >
+                        <source srcset="img_Web/team/img_miha_1x.webp 1x, img_Web/team/img_miha_2x.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                        width="360px"
+                        >
+                        <source srcset="img_Web/team/img_miha_1x.jpg 1x, img_Web/team/img_miha_1x.jpg 2x"
+                        media="(min-width: 768px)"
+                        width="360px"
+                        >
+                        <source srcset="img_Web/team/img_miha_1x.webp 1x, img_Web/team/img_miha_2x.webp 2x"
+                        type="image/webp"
+                        media="(max-width: 767px)"
+                        width="100%"
+                        >
+                        <source srcset="img_Web/team/img_miha_1x.jpg 1x, img_Web/team/img_miha_1x.jpg 2x"
+                        media="(max-width: 767px)"
+                        width="100%"
+                        >
+                        <img src="img_Web/team/img_miha_1x.jpg" alt="">
+                    </picture>
+                        <p class="team-member-name">Михайло Єрмаков</p>
+                        <p class="team-member-job">UI Designer</p>
+                        <div class="social-icon">
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse-3"></use>
+                            </svg>
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse-2"></use>
+                            </svg>
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse-1"></use>
+                            </svg>
+                            <svg class="icon-social" height="44px" width="44px">
+                                <use href="img_Web/symbol-defs.svg#icon-Ellipse"></use>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="client">
+            <div class="container">
+                <h2 class="client-title">Постійні клієнти</h2>
+                <div class="client-icons">
+                    <svg class="icon-client" height="92px" width="170px">
+                        <use href="img_Web/symbol-defs.svg#icon-Client-1"></use>
+                    </svg>
+                    <svg class="icon-client" height="92px" width="170px">
+                        <use href="img_Web/symbol-defs.svg#icon-Client-2"></use>
+                    </svg>
+                    <svg class="icon-client" height="92px" width="170px">
+                        <use href="img_Web/symbol-defs.svg#icon-Client-3"></use>
+                    </svg>
+                    <svg class="icon-client" height="92px" width="170px">
+                        <use href="img_Web/symbol-defs.svg#icon-Client-4"></use>
+                    </svg>
+                    <svg class="icon-client" height="92px" width="170px">
+                        <use href="img_Web/symbol-defs.svg#icon-Client-5"></use>
+                    </svg>
+                    <svg class="icon-client" height="92px" width="170px">
+                        <use href="img_Web/symbol-defs.svg#icon-Client-6"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-info">
+                    <img src="img_Web/WebStudio_footer.svg" alt="" class="footer-logo">
+                    <div class="address">
+                        <p class="footer-address">м. Київ, пр-т Лесі Українки, 26</p>
+                        <p class="footer-email"><a href="mailto:info@devstudiio.com"
+                                class="link-email">info@devstudio.com</a>
+                        </p>
+                        <p class="footer-phone"><a href="tel:+380961111111" class="link-phone">+38 096 111 11 11</a></p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4 class="social-title">ПРИЄДНУЙТЕСЬ</h4>
+                    <div class="socials">
+                        <svg class="icon-footer" height="44px" width="44px">
+                            <use href="img_Web/symbol-defs.svg#icon-Ellipse-3"></use>
+                        </svg>
+                        <svg class="icon-footer" height="44px" width="44px">
+                            <use href="img_Web/symbol-defs.svg#icon-Ellipse-2"></use>
+                        </svg>
+                        <svg class="icon-footer" height="44px" width="44px">
+                            <use href="img_Web/symbol-defs.svg#icon-Ellipse-1"></use>
+                        </svg>
+                        <svg class="icon-footer" height="44px" width="44px">
+                            <use href="img_Web/symbol-defs.svg#icon-Ellipse"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="footer-form">
+                    <form class="footer-forms">
+                        <h4 class="social-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h4>
+                        <label>
+                            <input class="input-footer" type="email" name="email" placeholder="E-mail">
+                        </label>
+                        <button class="btn-footer" type="button">Підписатися <img class="img-btn-footer"
+                                src="img_Web/icon_send.svg" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>
